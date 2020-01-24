@@ -1,6 +1,5 @@
-# README
-
-This Readme is for FilmRevies Rail Project
+README
+This Readme is for FilmRevies Rail Project 
 Created by Eric Stukenberg
 
 1. Setup
@@ -23,6 +22,8 @@ Created by Eric Stukenberg
             2. Then select the film you are reviewing and click create
         c. to edit the genres that the film is associated with click edit genre
             1. then select from the genre checkboxes what genres you should associate with the the film.
-    3. Finally you can click 'Top Rated' to get a list of the top rated films
+    3. Click genres to to see a list of genres and click on each genre to see a list of films in that genre
+    4. Finally you can click 'Top Rated' to get a list of the top rated films
     
+
 
