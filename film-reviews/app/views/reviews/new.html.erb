@@ -1,0 +1,12 @@
+<%= form_for @review do |f|%>
+    <%=f.label "Film Title"%>
+    <%=f.text_field :film_title%>
+    <%=f.label "Content"%>
+    <%=f.text_field :content%>
+    <%=f.label "Score"%>
+    <%=f.number_field :score, step: :any%>
+    <%=f.collection_select :film_id, Film.all, :id, :title %>
+    <%=f.submit%>
+<% end %>
+
+

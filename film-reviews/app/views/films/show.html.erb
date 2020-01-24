@@ -1,0 +1,9 @@
+<h2><%=@film.title%></h2>
+<ul>
+    <li>Rating Score: <%=@film.score%></li>
+    <li>Director: <%=@film.director%></li>
+    <li>Description: <%=@film.description%></li>
+    <li>Year Released: <%=@film.release_year%></li>
+    <%= link_to "Edit Genre", edit_film_path(@film) %>
+    <%= link_to "Write Review", new_review_path(@film) %>
+</ul>

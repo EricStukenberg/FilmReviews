@@ -1,0 +1,10 @@
+<h2>Higheset Rated Films </h2>
+<% count = 1 %>
+<% @best_films.each do |film| %>
+    
+    <h4><%= count %>. <%=  film.title %></h4>
+    <ul>
+        <li>Score: <%= film.score %></li>
+    </ul>
+    <% count += 1 %>
+<% end %>

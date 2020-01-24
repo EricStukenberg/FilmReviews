@@ -1,0 +1,9 @@
+<h3><%= @user.username %>'s Reviews </h3> <br>
+
+<% @reviews.each do |review| %>
+    <h4> <%= review.film_title %> </h4><br>
+    Content: <li> <%= review.content %></li> <br>
+    <li>Score: <%= review.score %></li> <br>
+    <%= link_to "Edit Review", edit_review_path(review) %>
+    <%= link_to "Delete Review", review_path(review), method: :delete %>
+<% end %>

@@ -1,0 +1,10 @@
+EDIT PAGE
+
+<li>Rating Score: <%=@film.score%></li>
+<li>Director: <%=@film.director%></li>
+<li>Description: <%=@film.description%></li>
+<li>Year Released: <%=@film.release_year%></li>
+<%= form_for @film do |f| %>
+    <%= f.collection_check_boxes :genre_ids, Genre.all, :id, :name %>
+    <%= f.submit %>
+<% end %>

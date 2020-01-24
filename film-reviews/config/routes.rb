@@ -9,6 +9,12 @@ Rails.application.routes.draw do
 
   get 'authorized', to: 'sessions#page_requires_login'
 
+  delete 'logout', to: 'sessions#destroy'
+
+  get 'users/reviews', to: 'users#reviews'
+
+  get 'films/best' , to: 'films#best'
+  
 
   resources :reviews
   resources :films

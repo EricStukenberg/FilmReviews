@@ -1,4 +1,4 @@
 class FilmGenre < ApplicationRecord
-    has_many :films
-    has_many :genres
+    belongs_to :film
+    belongs_to :genre
 end

@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2020_01_22_181210) do
   end
 
   create_table "reviews", force: :cascade do |t|
+    t.string "film_title"
     t.string "content"
     t.float "score"
     t.integer "user_id"
