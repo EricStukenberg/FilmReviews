@@ -20,5 +20,6 @@ Rails.application.routes.draw do
   resources :films
   resources :film_genres
   resources :genres
+  get '/reviews/new/:film_id', to: "reviews#new", as: "film_addition"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

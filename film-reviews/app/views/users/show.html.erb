@@ -2,9 +2,11 @@
 
 <% @reviews.each do |review| %>
     <h3>Film: <%= review.film.title %> </h3>
-    <h4>Reveiw title: <%= review.film_title %> </h4><br>
-    Content: <li> <%= review.content %></li> <br>
-    <li>Score: <%= review.score %></li> <br>
-    <%= link_to "Edit Review", edit_review_path(review) %>
-    <%= link_to "Delete Review", review_path(review), method: :delete %>
+    <ul>
+        <h4>Reveiw title: <%= review.film_title %> </h4>
+        Content: <li> <%= review.content %></li> <br>
+        <li>Score: <%= review.score %></li> <br>
+        <%= link_to "Edit Review", edit_review_path(review) %>
+        <%= link_to "Delete Review", review_path(review), method: :delete %>
+    </ul>
 <% end %>

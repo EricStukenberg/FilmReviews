@@ -10,15 +10,19 @@ class ReviewsController < ApplicationController
 
     def new 
         @review = Review.new
+        @film = Film.find(session[:film_id])
     end
 
     def create 
+        
         @review = Review.new(review_params)
         @review.user_id = current_user.id
+        @review.film_id = session[:film_id]
         if @review.save
             @review.film.update_score
             redirect_to user_path(current_user)
         else
+            @film = Film.find(session[:film_id])
             render :new
         end
     end

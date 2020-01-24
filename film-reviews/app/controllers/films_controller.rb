@@ -6,7 +6,7 @@ class FilmsController < ApplicationController
     end
 
     def show
-       
+       session[:film_id] = @film.id
     end
 
     def edit
