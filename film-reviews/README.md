@@ -1,5 +1,6 @@
 README
-This Readme is for FilmRevies Rail Project Created by Eric Stukenberg
+This Readme is for FilmRevies Rail Project 
+Created by Eric Stukenberg
 
 Setup a. git clone
 Setup
