@@ -1,7 +1,8 @@
 <h3><%= @user.username %>'s Reviews </h3> <br>
 
 <% @reviews.each do |review| %>
-    <h4> <%= review.film_title %> </h4><br>
+    <h3>Film: <%= review.film.title %> </h3>
+    <h4>Reveiw title: <%= review.film_title %> </h4><br>
     Content: <li> <%= review.content %></li> <br>
     <li>Score: <%= review.score %></li> <br>
     <%= link_to "Edit Review", edit_review_path(review) %>
